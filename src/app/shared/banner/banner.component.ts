@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent {
+
+  //abaixo uso de decorator @Input
+  @Input() src: string = ''
+  @Input() alt: string = ''
 
 }
