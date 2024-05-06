@@ -6,9 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent {
-
-  //abaixo uso de decorator @Input
-  @Input() src: string = ''
-  @Input() alt: string = ''
-
+  @Input() src: string = '';
+  @Input() alt: string = '';
 }

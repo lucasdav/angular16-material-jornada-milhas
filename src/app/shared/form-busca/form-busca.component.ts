@@ -8,11 +8,11 @@ import { ModalComponent } from '../modal/modal.component';
   styleUrls: ['./form-busca.component.scss']
 })
 export class FormBuscaComponent {
-
   constructor(public dialog: MatDialog) {}
 
-openDialog() {
-    this.dialog.open(ModalComponent);
-}
-
+  openDialog() {
+    this.dialog.open(ModalComponent, {
+      width: '50%'
+    })
+  }
 }
